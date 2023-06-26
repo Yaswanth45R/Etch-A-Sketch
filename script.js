@@ -13,7 +13,7 @@ const divs = document.querySelectorAll('.grid');
 divs.forEach((divd) => divd.addEventListener('mouseenter',colorChange));
 
 function colorChange(event){
-    event.target.style.background='blue'
+    event.target.style.background=`#${Math.floor(Math.random()*16777215).toString(16)}`;
 }
 
 const clearButton = document.querySelector('.btnClear');
